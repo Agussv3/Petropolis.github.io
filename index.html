@@ -4,23 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Petropolis Home</title>
 </head>
 <body>
+
     <header>
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-               <form class="container-fluid justify-content-start">
-                  <button class="btn btn-outline-success me-2" type="button">Main button</button>
-                  <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
-                </form> 
-        <a class="navbar-brand" href="#">
-            <img src="./assets/LogoSinFondo.png" alt="Logo" width="90" height="90" class="d-inline-block align-text-top">
-        </a>
+              <a class="navbar-brand" href="#"><img src="./assets/LogoSinFondo.png" alt="" class="logoc"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ventas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
 
+    <main class="main1cl">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        <div class="carousel-inner">
+        
+              <div class="carousel-item active d-item">
+                <img src="./assets/6505910.jpg" class="d-block w-100 d-img" alt="...">
+                    <div class="carousel-caption top-0 mt-4">
+                        <p class="mt-5 fs-3 text-uppercase">
+                        Rol, Accion, Mundo Abierto
+                        </p>
+                        <h1 class="display-1 wf-bolder text-capitalize">Cyberpunk_2077</h1>
+                        <button class="btn btn-primary px-4 py-2 fs-5 mt-5">informacion</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item active d-item">
+                    <img src="./assets/gente-pasando-tiempo-gasolinera.jpg" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption top-0 mt-4">
+                            <p class="mt-5 fs-3 text-uppercase">
+                            Juegos, Precios, Oportunidades
+                            </p>
+                            <h1 class="display-1 wf-bolder text-capitalize">Gaming</h1>
+                            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">informacion</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item active d-item">
+                        <img src="./assets/ruinas-antiguas.jpg" class="d-block w-100 d-img" alt="...">
+                            <div class="carousel-caption top-0 mt-4">
+                                <p class="mt-5 fs-3 text-uppercase">
+                                Accesorios para estaciones de servicio
+                                </p>
+                                <h1 class="display-1 wf-bolder text-capitalize">Petropólis</h1>
+                                <button class="btn btn-primary px-4 py-2 fs-5 mt-5">informacion</button>
+                            </div>
+                        </div>
+        
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </main>
 
 
 
