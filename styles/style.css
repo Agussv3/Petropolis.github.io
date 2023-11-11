@@ -90,7 +90,7 @@ body {
    height: 100%;
  }
 
- @media screen and (max-width: 990px){
+ @media screen and (max-width: 1285px){
    .contenedor1{
       display: grid;
       align-items: center;
