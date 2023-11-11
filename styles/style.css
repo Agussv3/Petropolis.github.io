@@ -1,8 +1,17 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+   background-color: #ffffff;
+ }
+
 .logoc{
     height: 60px;
 }
@@ -18,4 +27,77 @@
  }
  .colorsc{
     background-color: #0096C7;
+ }
+
+ .sbn{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+ }
+
+ .cuerpo1{
+    margin: 0 auto;
+    max-width: 1500px;
+    font-family: 'Lato';
+    color: #333;
+}
+
+
+ /*Css Grid*/
+
+ .caja1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    margin-bottom: 25px;
+    grid-area: caja1;
+ }
+ 
+ .caja2{
+   text-align: center;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    grid-area: caja2;
+ }
+ 
+ .caja3{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif; 
+    grid-area: caja3;
+ }
+ 
+ .caja4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: caja4;
+    height: 350px;
+    margin-left: 25px;
+ }
+ .contenedor1{
+   display: grid;
+   align-items: center;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-areas: 
+   "caja1 caja2"
+   "caja3 caja4";
+ }
+ .petropolisimg{
+   height: 100%;
+ }
+
+ @media screen and (max-width: 990px){
+   .contenedor1{
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(4,1fr);
+      grid-template-areas: 
+      "caja1" "caja2" "caja4" "caja3"
+      ;
+   }
  }
