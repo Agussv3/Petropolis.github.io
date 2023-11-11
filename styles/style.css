@@ -1,7 +1,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Quicksand:wght@700&display=swap" rel="stylesheet">
 *{
     margin: 0;
     padding: 0;
@@ -34,6 +33,7 @@ body {
     justify-content: center;
     margin-top: 25px;
     margin-bottom: 25px;
+    font-family: 'Quicksand', sans-serif;
  }
 
  .cuerpo1{
@@ -90,6 +90,108 @@ body {
    height: 100%;
  }
 
+.articulo1{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   max-width: 1000px;
+   font-family: 'Lato';
+   color: #333;
+}
+
+.imgar1{
+   padding-top: 25px;
+   max-width: 100%;
+}
+
+.ctn{
+   padding-top: 15px;
+   text-align: center;
+   font-size: 35px;
+}
+
+/*prueba1*/
+
+.formularior {
+   font-family: 'Times New Roman', serif;
+   background-color: #ffffff; /* Color de fondo inspirado en tonos terrosos */
+   margin: 0;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 1500;
+ }
+ 
+ .contenedor {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   text-align: center;
+ }
+ 
+ .h1f {
+   color: #8b4513; /* Color de texto marrón oscuro */
+ }
+ 
+ form {
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ label {
+   margin-top: 10px;
+   color: #8b4513; /* Color de texto marrón oscuro */
+ }
+ 
+ input, textarea {
+   padding: 8px;
+   margin: 8px 0;
+   border: 1px solid #8b4513; /* Borde marrón oscuro */
+   border-radius: 4px;
+   width: 100%;
+ }
+ 
+ .btnf {
+   background-color: #8b4513; /* Fondo marrón oscuro */
+   color: #fff; /* Texto blanco */
+   padding: 10px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .btnf:hover {
+   background-color: #6b3510; /* Cambio de color al pasar el mouse */
+ }
+
+.cajaformu1{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(1, 1fr);
+   grid-template-areas: "caja5 caja6";
+}
+
+.caja5{
+   grid-area: caja5;
+}
+
+.caja6{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   grid-area: caja6;
+}
+
+/*fin de prueba*/
+
+
+
+
+
  @media screen and (max-width: 1285px){
    .contenedor1{
       display: grid;
@@ -99,5 +201,11 @@ body {
       grid-template-areas: 
       "caja1" "caja2" "caja4" "caja3"
       ;
+   }
+   .cajaformu1{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "caja5" "caja6";
    }
  }
