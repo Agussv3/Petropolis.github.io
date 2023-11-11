@@ -213,6 +213,12 @@ body {
    height: 32px;
 }
 
+.fbemms{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
  @media screen and (max-width: 1285px){
    .contenedor1{
       display: flex;
