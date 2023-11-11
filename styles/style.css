@@ -114,7 +114,7 @@ body {
 /*prueba1*/
 
 .formularior {
-   font-family: 'Times New Roman', serif;
+   font-family: 'Poppins', sans-serif;
    background-color: #ffffff; /* Color de fondo inspirado en tonos terrosos */
    margin: 0;
    padding: 0;
@@ -189,23 +189,54 @@ body {
 /*fin de prueba*/
 
 
+.piedp{
+   background-color: black;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(1,1fr);
+   grid-template-areas: "caja7 caja8 caja9";
+}
 
+.caja7 img{
+   height: 90px;
+}
 
+.caja8{
+   text-align: center;
+   color: #D4AF37;
+}
+
+.caja9{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 32px;
+}
 
  @media screen and (max-width: 1285px){
    .contenedor1{
-      display: grid;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      grid-template-columns: repeat(1,1fr);
-      grid-template-rows: repeat(4,1fr);
-      grid-template-areas: 
-      "caja1" "caja2" "caja4" "caja3"
+
       ;
    }
+
    .cajaformu1{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-areas: "caja5" "caja6";
+      display: flex;
+      flex-direction: column;}
+   
+   .petropolisimg{
+      height: 70%;
+    }
+    .caja4{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-area: caja4;
+   }
+   .caja6{
+      margin-top: 15px;
+      margin-bottom: 20px;
    }
  }
