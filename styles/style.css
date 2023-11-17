@@ -219,6 +219,12 @@ body {
    justify-content: center;
 }
 
+.productos{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(17, 1fr);
+}
+
  @media screen and (max-width: 1285px){
    .contenedor1{
       display: flex;
@@ -244,5 +250,11 @@ body {
    .caja6{
       margin-top: 15px;
       margin-bottom: 20px;
+   }
+   .productos{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
    }
  }
