@@ -231,6 +231,12 @@ body {
    grid-template-rows: repeat(15, 1fr);
 }
 
+.productosss3{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(7, 1fr);
+}
+
  @media screen and (max-width: 1285px){
    .contenedor1{
       display: flex;
@@ -257,7 +263,21 @@ body {
       margin-top: 15px;
       margin-bottom: 20px;
    }
+   .cuerpop{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
    .productosss{
+      display: flex;
+      flex-direction: column;
+   }
+   .productosss2{
+      display: flex;
+      flex-direction: column;
+   }
+   
+   .productosss3{
       display: flex;
       flex-direction: column;
    }
