@@ -7,8 +7,17 @@
     box-sizing: border-box;
 }
 
+header{
+   text-align: center;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 1000;
+}
+
 body {
    background-color: #ffffff;
+   margin-top: 80px
  }
 
 .logoc{
